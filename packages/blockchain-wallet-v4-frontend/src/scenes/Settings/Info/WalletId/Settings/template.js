@@ -5,7 +5,7 @@ import { Text } from 'blockchain-info-components'
 const Settings = props => {
   const { guid } = props
 
-  return <Text>{guid}</Text>
+  return <Text data-e2e='walletId'>{guid}</Text>
 }
 
 Settings.propTypes = {

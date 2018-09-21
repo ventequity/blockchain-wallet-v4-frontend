@@ -88,7 +88,7 @@ const Navigation = props => {
       <Menu onClick={logClick}>
         {/* If updating navigation item names dont forget to update analytics saga */}
         <LinkContainer to='/home' activeClassName='active'>
-          <MenuItem>
+          <MenuItem data-e2e='dashboardLink'>
             <Icon name='home' />
             <FormattedMessage
               id='layouts.wallet.menuleft.navigation.dashboard'
@@ -108,7 +108,7 @@ const Navigation = props => {
           </Separator>
         </MenuItem>
         <LinkContainer to='/btc/transactions' activeClassName='active'>
-          <MenuItem>
+          <MenuItem data-e2e='bitcoinLink'>
             <Icon name='bitcoin-in-circle' />
             <FormattedMessage
               id='layouts.wallet.menuleft.navigation.transactions.bitcoin'
@@ -119,7 +119,7 @@ const Navigation = props => {
           </MenuItem>
         </LinkContainer>
         <LinkContainer to='/eth/transactions' activeClassName='active'>
-          <MenuItem>
+          <MenuItem data-e2e='etherLink'>
             <Icon name='ethereum' />
             <FormattedMessage
               id='layouts.wallet.menuleft.navigation.transactions.ether'
@@ -130,7 +130,7 @@ const Navigation = props => {
           </MenuItem>
         </LinkContainer>
         <LinkContainer to='/bch/transactions' activeClassName='active'>
-          <MenuItem>
+          <MenuItem data-e2e='bitcoinCashLink'>
             <Icon name='bitcoin-cash' />
             <FormattedMessage
               id='layouts.wallet.menuleft.navigation.transactions.bch'
@@ -145,7 +145,7 @@ const Navigation = props => {
         </MenuItem>
         {canTrade && (
           <LinkContainer to='/buy-sell' activeClassName='active'>
-            <MenuItem>
+            <MenuItem data-e2e='buyAndSellLink'>
               <Icon name='cart-filled' />
               <FormattedMessage
                 id='layouts.wallet.menuleft.navigation.buybitcoin'
@@ -157,7 +157,7 @@ const Navigation = props => {
           </LinkContainer>
         )}
         <LinkContainer to='/exchange' activeClassName='active'>
-          <MenuItem>
+          <MenuItem data-e2e='exchangeLink'>
             <Icon name='exchange-filled' />
             <FormattedMessage
               id='layouts.wallet.menuleft.navigation.exchange'
@@ -168,7 +168,7 @@ const Navigation = props => {
           </MenuItem>
         </LinkContainer>
         <LinkContainer to='/security-center' activeClassName='active'>
-          <MenuItem>
+          <MenuItem data-e2e='securityCenterLink'>
             <Icon name='lock' />
             <FormattedMessage
               id='layouts.wallet.menuleft.navigation.securitycenter'
@@ -184,7 +184,7 @@ const Navigation = props => {
           activeClassName='active'
           className={settingsOpened ? 'active' : ''}
         >
-          <MenuItem>
+          <MenuItem data-e2e='settingsLink'>
             <Icon name='settings' />
             <FormattedMessage
               id='layouts.wallet.menuleft.navigation.settings'
