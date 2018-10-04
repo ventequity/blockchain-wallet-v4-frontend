@@ -1737,7 +1737,7 @@
   "scenes.login.resendsms": "Resend SMS",
   "scenes.login.submit": "Log in",
   "scenes.login.troubles": "Having some trouble?",
-  "scenes.login.welcome": "Welcome back!",
+  "scenes.login.welcome": "Welcome back Satoshi!",
   "scenes.login.wrong_password": "Error decrypting wallet. Wrong password",
   "scenes.login.yubikey": "Yubikey",
   "scenes.logout.continue": "Continue to Login",
